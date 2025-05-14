@@ -13,67 +13,81 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel='stylesheet' 
-    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <!--Flowbite Cdn CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="relative">
     <style>
-        /* File: input.css atau di <style> */
+      /* File: input.css atau di <style> */
 
+      @layer utilities {
+        .custom-scroll::-webkit-scrollbar {
+          width: 6px;
+          height: 20px;
+        }
 
-@layer utilities {
-  .custom-scroll::-webkit-scrollbar {
-    width: 6px;
-    height:20px
-  }
+        .custom-scroll::-webkit-scrollbar-track {
+          background: transparent;
+        }
 
-  .custom-scroll::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  /* .custom-scroll::-webkit-scrollbar-thumb {
+        /* .custom-scroll::-webkit-scrollbar-thumb {
     background-color: ;
     border-radius: 6px;
   } */
 
-  .custom-scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #c766d8;
-  }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+          background-color: #c766d8;
+        }
 
-  .custom-scroll {
-    scrollbar-width: thin;
-    scrollbar-color: #c766d8 transparent;
-  }
-}
-
+        .custom-scroll {
+          scrollbar-width: thin;
+          scrollbar-color: #c766d8 transparent;
+        }
+      }
     </style>
+    <!-- CSS: Sembunyikan Scrollbar -->
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
     <header
-      class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px]"
+      class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px] shadow z-40"
     >
-    
-    <div class="w-[500px]  text-black">
+      <div class="w-[500px] text-black">
         <div class="font-semibold">
-        <h1>Selamat Datang di Hans Store</h1>
+          <h1>Selamat Datang di Hans Store</h1>
         </div>
         <p>Hallo, Selamat Berbelanja</p>
-    </div>
-      
+      </div>
 
-      <form action="" class="ml-[-200px] ">
-        <div class="relative ">
+      <form action="" class="ml-[-200px]">
+        <div class="relative">
           <i
-            class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black"
+            class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"
           ></i>
           <input
             type="text"
-            class="  bg-white rounded-md py-2 pl-10 pr-3 w-[300px] placeholder-black text-black"
+            class="rounded-md py-2 pl-10 pr-3 w-[300px] text-black focus:text-black"
             placeholder="Cari Produk"
           />
         </div>
       </form>
-      <div class="flex ml-[180px] text-black cursor-pointer">
-        <div class=" border border-black py-2 px-3 rounded-l-md">
-            <i class="bi bi-person-circle "></i>
+      <div class="flex ml-[200px] text-black cursor-pointer">
+        <div class="border border-black py-2 px-3 rounded-l-md">
+          <i class="bi bi-person-circle"></i>
         </div>
         <div class="border border-black py-2 px-3">
           <a href=""><i class="bi bi-bell-fill"></i></a>
@@ -85,112 +99,518 @@
     </header>
 
     <aside
-       id="sidebar"  class="b w-[280px] h-screen left-0 top-0 shadow-xl p-5 fixed overflow-hidden hover:overflow-y-auto transition-all duration-300  custom-scroll"
+      id="sidebar"
+      class="b w-[280px] h-screen left-0 top-0 shadow-xl p-5 fixed overflow-hidden hover:overflow-y-auto transition-all duration-300 custom-scroll"
     >
-      <div class="font-bold  text-center  flex gap-1 fixed border-b-2 w-[230px] border-gray-400">
-       <img src="/img/logo.png" class="w-[80px] h-[80px] " >
-       <p class="pt-5 text-[20px]">HANS STORE</p>
-       </div>
+      <div
+        class="font-bold text-center flex gap-1 fixed border-b-2 w-[230px] border-gray-400 bg-white"
+      >
+        <img src="/img/logo.png" class="w-[80px] h-[80px]" />
+        <p class="pt-5 text-[20px]">HANS STORE</p>
+      </div>
       <div class="border border-gray-400 mt-20 fixed"></div>
       <div class="mt-24">
-      <div class="mt-3 py-2 mx-3  text-sm">
-        <p>Menu Dashboard</p>
-      </div>
-      <div
-        class="mt-1 px-5 py-3 mx-3 semi-bold bg-gray-500  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-bag"></i>
-          <p>Produk</p>
-        </a>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-receipt"></i>
-          <p>Pesanan</p>
-        </a>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-clock-history"></i>
-          <p>Riwayat</p>
-        </a>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-cart3"></i>
-          <p>Keranjang</p>
-        </a>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="fi fi-bs-ticket"></i>
-          <p>Voucher</p>
-        </a>
-      </div>
-      <div class="border border-gray-400"></div>
-      <div class="mt-3 py-2 mx-3  text-sm">
-        <p>Lainnya</p>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-gear-fill"></i>
-          <p>Pengaturan</p>
-        </a>
-      </div>
-      <div
-        class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
-      >
-        <a href="" class="flex gap-3"
-          ><i class="bi bi-person-circle"></i>
-          <p>Akun</p>
-        </a>
-      </div>
-      <!-- <div
+        <div class="mt-3 py-2 mx-3 text-sm">
+          <p>Menu Dashboard</p>
+        </div>
+        <div
+          class="mt-1 px-5 py-3 mx-3 semi-bold bg-gray-500 hover:bg-gray-300 rounded-md"
+        >
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-bag"></i>
+            <p>Produk</p>
+          </a>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-receipt"></i>
+            <p>Pesanan</p>
+          </a>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-clock-history"></i>
+            <p>Riwayat</p>
+          </a>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-cart3"></i>
+            <p>Keranjang</p>
+          </a>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="fi fi-bs-ticket"></i>
+            <p>Voucher</p>
+          </a>
+        </div>
+        <div class="border border-gray-400"></div>
+        <div class="mt-3 py-2 mx-3 text-sm">
+          <p>Lainnya</p>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-gear-fill"></i>
+            <p>Pengaturan</p>
+          </a>
+        </div>
+        <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+          <a href="" class="flex gap-3"
+            ><i class="bi bi-person-circle"></i>
+            <p>Akun</p>
+          </a>
+        </div>
+        <div
         class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md"
       >
         <a href="" class="flex gap-3"
           ><i class="bi bi-plus-circle-fill"></i>
-          <p></p>
+          <p>logot</p>
         </a>
-      </div> -->
-      <div class="border border-gray-400"></div>
+      </div>
+        <div class="border border-gray-400"></div>
       </div>
     </aside>
 
     <!-- Section 1 -->
-    <section  id="toggleSidebar" class="pl-[310px] pt-[100px]">
+    <section
+      id="toggleSidebar"
+      class="bg-purple-300 ml-[280px] h-[100vh] pt-[20px]"
+    >
+      <div
+        id="controls-carousel"
+        class="relative w-full"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative h-[200px] overflow-hidden rounded-lg md:h-[140px] border mt-[80px] mx-8"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/bg-1.jpg"
+              class="w-full h-full object-cover"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/bg-4.jpg"
+              class="w-full h-full object-cover"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/bg-3.jpg"
+              class="w-full h-full object-cover"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/bg-5.jpg"
+              class="w-full h-full object-cover"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
       
+      <div
+        id="scrollContainer"
+        class="cursor-grab active:cursor-grabbing overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth select-none"
+      >
+        <div class="flex gap-4">
+          <!-- Item -->
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-purple-500 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Semua Produk</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Sepatu Pria</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Sepatu Wanita</p>
+          </div>
+          <!-- Tambah item lainnya seperti ini -->
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Pakaian Pria</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Pakaian Wanita</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Aksesoris</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Jam Tangan</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Kecantikan</p>
+          </div>
+          <div
+            class="mt-9 border w-[170px] h-[45px] bg-white text-center rounded-md flex items-center pl-3 gap-2 shrink-0"
+          >
+            <div
+              class="bg-gray-400 w-7 h-7 rounded-md flex items-center justify-center"
+            >
+              <i class="bi bi-box-seam text-white text-sm"></i>
+            </div>
+            <p class="font-semibold">Tas Pria</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 ml-4 mt-3">
+        <i class="bi bi-columns-gap text-xl"></i>
+        <h1 class=" text-xl font-bold">Rekomendasi</h1>
+      </div>
+      <section class="bg-purple-300 h-screen">
+        <div id="scrollContainer"
+        class="cursor-grab flex active:cursor-grabbing overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth select-none">
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/nb.jpg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">New Belance Classic</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+        <div class="bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+        <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat"></div>
+        <div class="card-body pt-3 p-4">
+                      <h1 class="text-semibold ">Adidas Samba Blue x Argentina</h1>
+                      <div class="d-flex align-items-center justify-content-between text-md">
+                        <h6 class="fw-semibold  mb-0 gap-3">
+                          <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+                        <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                        </div>
+                      </div>
+                      <div class="flex gap-2 text-sm text-gray-500">
+                      <i class="bi bi-star text-yellow-400"></i>
+                      <p>4.8</p>
+                      <div class="border"></div>
+                      <p>950 Terjual</p>
+                      </div>
+      </div>
+      </div>
+      </div>
+      </section>
       
     </section>
     <!-- UNTUK SIDEBAR -->
     <script>
-        const sidebar = document.getElementById('sidebar');
-      
-        // Aktifkan scroll saat klik di dalam sidebar
-        sidebar.addEventListener('click', () => {
-          sidebar.classList.add('overflow-y-auto');
-          sidebar.classList.remove('overflow-hidden');
-        });
-      
-        // Hilangkan scroll saat klik di luar sidebar
-        document.addEventListener('click', (event) => {
-          const isClickInside = sidebar.contains(event.target);
-          if (!isClickInside) {
-            sidebar.classList.remove('overflow-y-auto');
-            sidebar.classList.add('overflow-hidden');
-          }
-        });
-      </script>
-      
+      const sidebar = document.getElementById("sidebar");
+
+      // Aktifkan scroll saat klik di dalam sidebar
+      sidebar.addEventListener("click", () => {
+        sidebar.classList.add("overflow-y-auto");
+        sidebar.classList.remove("overflow-hidden");
+      });
+
+      // Hilangkan scroll saat klik di luar sidebar
+      document.addEventListener("click", (event) => {
+        const isClickInside = sidebar.contains(event.target);
+        if (!isClickInside) {
+          sidebar.classList.remove("overflow-y-auto");
+          sidebar.classList.add("overflow-hidden");
+        }
+      });
+    </script>
+    <!-- {{-- Flowbite Cdn JS --}} -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- JavaScript: Drag Scroll -->
+    <script>
+      const scrollContainer = document.getElementById("scrollContainer");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      scrollContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollContainer.classList.add("active");
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+      });
+
+      scrollContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+      });
+
+      scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+      });
+
+      scrollContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 1.5; // speed factor
+        scrollContainer.scrollLeft = scrollLeft - walk;
+      });
+    </script>
+  </body>
 </html>
