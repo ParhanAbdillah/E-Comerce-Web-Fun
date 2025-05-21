@@ -875,6 +875,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[1px\] {
+    font-size: 1px;
+  }
   .text-\[5px\] {
     font-size: 5px;
   }
@@ -906,6 +909,9 @@
   }
   .text-\[-5\] {
     color: -5;
+  }
+  .text-\[10ipx\] {
+    color: 10ipx;
   }
   .text-black {
     color: var(--color-black);
@@ -1074,6 +1080,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:h-\[100px\] {
+    @media (width >= 48rem) {
+      height: 100px;
     }
   }
   .md\:h-\[140px\] {
