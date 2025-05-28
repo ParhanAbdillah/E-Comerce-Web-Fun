@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css" />
+  <!--Flowbite Cdn CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="relative">
+  <style>
+    /* File: input.css atau di <style> */
+
+    @layer utilities {
+      .custom-scroll::-webkit-scrollbar {
+        width: 6px;
+        height: 20px;
+      }
+
+      .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: ;
+    border-radius: 6px;
+  } */
+
+      .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background-color: #c766d8;
+      }
+
+      .custom-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: #c766d8 transparent;
+      }
+    }
+  </style>
+  <!-- CSS: Sembunyikan Scrollbar -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+
+  <header
+    class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px] shadow z-40">
+    <div class="w-[500px] text-black">
+      <div class="font-semibold">
+        <h1>Selamat Datang di Hans Store</h1>
+      </div>
+      <p>Hallo, Selamat Berbelanja</p>
+    </div>
+
+    <form action="" class="ml-[-200px]">
+      <div class="relative">
+        <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"></i>
+        <input type="text" class="rounded-md py-2 pl-10 pr-3 w-[300px] text-black focus:text-black"
+          placeholder="Cari Produk" />
+      </div>
+    </form>
+    <div class="flex ml-[200px] text-black cursor-pointer">
+      <div class="border border-black py-2 px-3 rounded-l-md">
+        <i class="bi bi-person-circle"></i>
+      </div>
+      <div class="border border-black py-2 px-3">
+        <a href=""><i class="bi bi-bell-fill"></i></a>
+      </div>
+      <div class="border border-black py-2 px-3 rounded-r-md">
+        <a href=""><i class="bi bi-gear-fill"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <aside id="sidebar"
+    class="b w-[280px] h-screen left-0 top-0 shadow-xl p-5 fixed overflow-hidden hover:overflow-y-auto transition-all duration-300 custom-scroll">
+    <div class="font-bold text-center flex gap-1 fixed border-b-2 w-[230px] border-gray-400 bg-white">
+      <img src="/img/logo.png" class="w-[80px] h-[80px]" />
+      <p class="pt-5 text-[20px]">HANS STORE</p>
+    </div>
+    <div class="border border-gray-400 mt-20 fixed"></div>
+    <div class="mt-24">
+      <div class="mt-3 py-2 mx-3 text-sm">
+        <p>Menu Dashboard</p>
+      </div>
+      <div class="mt-1 px-5 py-3 mx-3 semi-bold bg-gray-500 hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-bag"></i>
+          <p>Produk</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-receipt"></i>
+          <p>Pesanan</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-clock-history"></i>
+          <p>Riwayat</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-cart3"></i>
+          <p>Keranjang</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="fi fi-bs-ticket"></i>
+          <p>Voucher</p>
+        </a>
+      </div>
+      <div class="border border-gray-400"></div>
+      <div class="mt-3 py-2 mx-3 text-sm">
+        <p>Lainnya</p>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-gear-fill"></i>
+          <p>Pengaturan</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-person-circle"></i>
+          <p>Akun</p>
+        </a>
+      </div>
+      <div class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md">
+        <a href="" class="flex gap-3"><i class="bi bi-plus-circle-fill"></i>
+          <p>logot</p>
+        </a>
+      </div>
+      <div class="border border-gray-400"></div>
+    </div>
+  </aside>
+
+  <!-- Section 1 -->
+  <section id="toggleSidebar" class="bg-purple-300 ml-[280px] h-[1100px] pt-[20px] mt-8">
+
+    <div class="grid grid-cols-3 px-5 gap-5 pt-12">
+      <div class="bg-blue-500 text-white p-6 rounded-lg shadow-md relative w-full max-w-sm">
+        <div>
+          <div class="text-xl font-bold mb-2">Flash Sale</div>
+          <div class="text-3xl font-extrabold mb-2">50% OFF</div>
+          <div class="mb-4">Get half price on all items during the flash sale!</div>
+          <div class="bg-white text-blue-500 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+            data-code="FLASH50">
+            FLASH50
+          </div>
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">
+          Copied!
+        </div>
+      </div>
+
+      <!-- Voucher 1: Holiday Special -->
+      <div class="bg-red-500 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Holiday Special</div>
+        <div class="text-3xl font-extrabold mb-2">30% OFF</div>
+        <div class="mb-4">Enjoy your holidays with a tasty discount.</div>
+        <div class="bg-white text-red-500 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="HOLIDAY30">
+          HOLIDAY30
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 2: New Customer -->
+      <div class="bg-yellow-500 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">New Customer</div>
+        <div class="text-3xl font-extrabold mb-2">25% OFF</div>
+        <div class="mb-4">Welcome aboard! Save on your first order.</div>
+        <div class="bg-white text-yellow-500 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="WELCOME25">
+          WELCOME25
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 3: Weekend Deal -->
+      <div class="bg-purple-500 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Weekend Deal</div>
+        <div class="text-3xl font-extrabold mb-2">15% OFF</div>
+        <div class="mb-4">Relax with some savings this weekend!</div>
+        <div class="bg-white text-purple-500 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="WEEKEND15">
+          WEEKEND15
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 4: Member Exclusive -->
+      <div class="bg-green-600 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Member Exclusive</div>
+        <div class="text-3xl font-extrabold mb-2">40% OFF</div>
+        <div class="mb-4">Thank you for being a member. Enjoy this special offer.</div>
+        <div class="bg-white text-green-600 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="MEMBER40">
+          MEMBER40
+        </div>
+        <div class="absolute top-2 right-2 bg-green-700 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 5: Limited Time -->
+      <div class="bg-blue-500 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Limited Time</div>
+        <div class="text-3xl font-extrabold mb-2">10% OFF</div>
+        <div class="mb-4">Hurry up, limited time only!</div>
+        <div class="bg-white text-blue-500 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="LIMITED10">
+          LIMITED10
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 6: Referral Bonus -->
+      <div class="bg-red-600 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Referral Bonus</div>
+        <div class="text-3xl font-extrabold mb-2">20% OFF</div>
+        <div class="mb-4">Share with friends and save together.</div>
+        <div class="bg-white text-red-600 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="REFER20">
+          REFER20
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 7: Season Sale -->
+      <div class="bg-yellow-600 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Season Sale</div>
+        <div class="text-3xl font-extrabold mb-2">35% OFF</div>
+        <div class="mb-4">Seasonal discounts for a fresh start.</div>
+        <div class="bg-white text-yellow-600 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="SEASON35">
+          SEASON35
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm p      
+        x-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 8: Clearance -->
+      <div class="bg-pink-600 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Clearance</div>
+        <div class="text-3xl font-extrabold mb-2">60% OFF</div>
+        <div class="mb-4">Final clearance - grab them before they're gone.</div>
+        <div class="bg-white text-pink-600 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="CLEAR60">
+          CLEAR60
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+
+      <!-- Voucher 9: Bonus Points -->
+      <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-md relative">
+        <div class="text-xl font-bold mb-2">Bonus Points</div>
+        <div class="text-3xl font-extrabold mb-2">5X POINTS</div>
+        <div class="mb-4">Earn five times more points on all purchases.</div>
+        <div class="bg-white text-indigo-600 font-mono font-semibold px-3 py-1 rounded-md inline-block cursor-pointer"
+          data-code="POINTS5X">
+          POINTS5X
+        </div>
+        <div class="absolute top-2 right-2 bg-green-600 text-white text-sm px-2 py-1 rounded hidden">Copied!</div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- UNTUK SIDEBAR -->
+  <script>
+    const sidebar = document.getElementById("sidebar");
+
+    // Aktifkan scroll saat klik di dalam sidebar
+    sidebar.addEventListener("click", () => {
+      sidebar.classList.add("overflow-y-auto");
+      sidebar.classList.remove("overflow-hidden");
+    });
+
+    // Hilangkan scroll saat klik di luar sidebar
+    document.addEventListener("click", (event) => {
+      const isClickInside = sidebar.contains(event.target);
+      if (!isClickInside) {
+        sidebar.classList.remove("overflow-y-auto");
+        sidebar.classList.add("overflow-hidden");
+      }
+    });
+  </script>
+  <!-- {{-- Flowbite Cdn JS --}} -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <!-- JavaScript: Drag Scroll -->
+  <script>
+    const scrollContainer = document.getElementById("scrollContainer");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener("mousedown", (e) => {
+      isDown = true;
+      scrollContainer.classList.add("active");
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      const walk = (x - startX) * 1.5; // speed factor
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.voucher-code').forEach(codeElem => {
+      codeElem.addEventListener('click', () => {
+        const code = codeElem.dataset.code || codeElem.textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          const voucher = codeElem.closest('.voucher');
+          const msg = voucher.querySelector('.copied-msg');
+          msg.classList.add('show');
+          setTimeout(() => msg.classList.remove('show'), 1500);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
