@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   <title>Produk</title>
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -56,7 +59,7 @@
   </style>
 
   <header
-    class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px]  md:ml-[280px] shadow z-40">
+    class="flex fixed top-0 left-0 right-0 md:w-full w-[360px] h-20 bg-purple-300 text-white items-center pl-[30px]  md:ml-[280px] shadow z-40">
     <div class="w-[500px] text-black hidden md:block">
       <div class="font-semibold ">
         <h1>Selamat Datang di Hans Store</h1>
@@ -64,14 +67,14 @@
       <p>Hallo, Selamat Berbelanja</p>
     </div>
 
-    <form action="" class="md:ml-[-200px]">
+    <form action="" class="md:ml-[-200px] ml-[-20px]">
       <div class="relative">
         <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"></i>
-        <input type="text" class="rounded-md py-2 pl-10 pr-3 md:w-[300px] w-[230px] text-black focus:text-black"
+        <input type="text" class="rounded-md py-2 pl-10 pr-3 md:w-[300px] w-[190px] text-black focus:text-black"
           placeholder="Cari Produk" />
       </div>
     </form>
-    <div class="flex md:ml-[200px] ml-3 text-black cursor-pointer">
+    <div class="flex md:ml-[200px]  text-black cursor-pointer mx-3 ">
       <div class="border border-black py-2 px-3 rounded-l-md">
         <i class="bi bi-person-circle"></i>
       </div>
@@ -142,32 +145,33 @@
       <div class="border border-gray-400"></div>
     </div>
   </aside>
-  <aside class="block md:hidden fixed bottom-0 left-0 right-0 h-16 z-20 flex shadow bg-white justify-around items-center">
+  <aside
+    class="block md:hidden fixed bottom-0 left-0 right-0 h-16 z-20 flex shadow bg-white justify-around items-center">
     <div>
-        <a href="/dashboard" class="flex flex-col items-center">
-            <i class="bi bi-cash text-2xl"></i>
-            <p class="text-sm -mt-1">Produk</p>
-        </a>
+      <a href="/dashboard" class="flex flex-col items-center">
+        <i class="bi bi-bag text-2xl"></i>
+        <p class="text-sm -mt-1">Produk</p>
+      </a>
     </div>
     <div>
-        <a href="/kategori" class="flex flex-col items-center">
-            <i class="bi bi-grid-fill text-2xl"></i>
-            <p class="text-sm -mt-1">Pesanan</p>
-        </a>
+      <a href="/kategori" class="flex flex-col items-center">
+        <i class="bi bi-receipt text-2xl"></i>
+        <p class="text-sm -mt-1">Pesanan</p>
+      </a>
     </div>
     <div>
-        <a href="/profil" class="flex flex-col items-center">
-            <i class="bi bi-person-fill text-2xl"></i>
-            <p class="text-sm -mt-1">Keranjang</p>
-        </a>
+      <a href="/profil" class="flex flex-col items-center">
+        <i class="bi bi-cart3 text-2xl"></i>
+        <p class="text-sm -mt-1">Keranjang</p>
+      </a>
     </div>
     <div>
-        <a href="" class="flex flex-col items-center">
-            <i class="bi bi-person-fill text-2xl"></i>
-            <p class="text-sm -mt-1">Profil</p>
-        </a>
+      <a href="" class="flex flex-col items-center">
+        <i class="bi bi-person-fill text-2xl"></i>
+        <p class="text-sm -mt-1">Profil</p>
+      </a>
     </div>
-</aside>
+  </aside>
 
 
   <!-- Section 1 -->
@@ -298,18 +302,520 @@
     <!-- SECTION 2 -->
     <section class="bg-purple-300 h-[700px]">
       <!-- PRODUK YAN PERTAMA -->
-      <div id="scrolldiv" 
-        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth ">
-        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h[200px] ml- mt-2 rounded-md">
-          <div class="md:w-[220px] w-[180px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
+      <div id="scrolldiv"
+        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth gap-4 md:gap-0 ">
+
+        <!-- Kartu Produk 1 -->
+        <div class="card bg-white md:w-[220px] md:h-[330px] w-[180px] h-[300px] mt-2 rounded-md">
+          <div
+            class="relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class="bg-purple-500 w-[40px] h-[40px] md:ml-[170px] ml-[135px] flex justify-center items-center rounded-full">
+              <button data-modal-target="modal-adidas" data-modal-toggle="modal-adidas">
+                <i class="bi bi-cart3 text-white"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="font-semibold">Adidas Samba Blue</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold mb-0 gap-3">
+                <span class="text-red-400">Rp 2.000.000</span>
+                <span class="md:text-sm text-gray-400"><del>Rp 2.500.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500 mt-2">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL untuk produk Adidas -->
+        <div id="modal-adidas" tabindex="-1"
+          class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-[500px] h-[600px] max-w-full max-h-full mx-auto">
+            <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
+              <!-- Header -->
+              <div class="flex items-center justify-between p-4 border-b rounded-t">
+                <h3 class="text-xl font-medium text-gray-900">Detail Produk</h3>
+                <button type="button"
+                  class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
+                  data-modal-hide="modal-adidas">
+                  ✕
+                </button>
+              </div>
+              <!-- Body -->
+              <div class="p-4 space-y-4 flex-1 overflow-y-auto">
+                <p class="text-base text-gray-500">Ini adalah Adidas Samba Blue dengan harga Rp 2.000.</p>
+                <!-- Tambahkan konten tambahan di sini jika perlu -->
+              </div>
+              <!-- Footer -->
+              <div class="flex items-center p-4 border-t">
+                <button data-modal-hide="modal-adidas"
+                  class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200  md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/nb.jpg)] bg-cover bg-no-repeat  md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sepatu New Belance</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 450.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    500.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>800 Terjual</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200  md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/compas.jpeg)] bg-cover bg-no-repeat  md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
           </div>
 
           <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Adidas Samba Blue</h1>
+            <h1 class="text-semibold ">Sepatu Compas</h1>
             <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="md:text-sm   text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 700.500</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    800.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>5k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200  md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/jordan.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sepatu Jordan</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 350.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    450.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>7k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200  md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/putih.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sepatu White</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 265.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    280.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>2k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/puma.avif)] bg-cover bg-no-repeat  md:pt-[165px]  pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sepatu Puma</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 2.500.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    3.500.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>500 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/ventela.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sepatu Ventela</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 320.700</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    450.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>700 Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Item yang Kedua -->
+      <div id="scrolldiv"
+        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth gap-4 md:gap-0  mt-5">
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos1.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kaos Hitam Bear</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 80.000</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    99.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>10k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos2.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kaos Hitam OnePiece </h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 45.500</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    55.900</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>5k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos3.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kaos Hitam Samurai</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 55.000</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    65.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>10k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos4.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kaos Kim Tae-Hyung</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 120.540</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    150.480</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>1k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos5.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Jersey Real Madrid</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 700.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    899.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>2k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaos6.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Jersey Barcelona</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 198.560</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    300.999</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>7k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200  md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kaosbear.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kaos King Bear</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 65.500</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    89.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>1k Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="pt-[20 px] md:pt-[40px]  md:mt-[0px] mt-[-50px] bg-purple-300 h-[1600px]  ">
+      <div class="w-full  flex justify-center items-center mt-5">
+        <button class="bg-purple-600 rounded-md   w-[300px] h-[30px] text-white md:[500px]">Lihat Lainnya</button>
+      </div>
+      <div class="md:flex ">
+        <div
+          class="ml-4 md:w-[500px] md:h-[230px] w-[320px] h-[120px] bg-[url('/img/banner1.jpg')] bg-cover bg-no-repeat rounded-md mt-8  md:block">
+        </div>
+        <div class=" md:mt-8 md:ml-[120px] ml-4">
+          <div
+            class="bg-purple-700 md:w-[300px] md:h-[100px] w-[320px] h-[100px] bg-[url('/img/banner1.jpg')] bg-cover bg-no-repeat rounded-md md:block mt-3 md:mt-0">
+          </div>
+          <div
+            class="bg-purple-700 md:w-[300px] md:h-[100px] w-[320px]    h-[100px] bg-[url('/img/banner1.jpg')] bg-cover bg-no-repeat mt-6 rounded-md block">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 px-4 mt-8">
+        <i class="bi bi-columns-gap text-xl"></i>
+        <h1 class="text-xl font-bold">Produk Terlaris</h1>
+      </div>
+      <div id="scrolldiv"
+        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth gap-4 md:gap-0  mt-5">
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/tas.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Tas Geof Max</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 93.000</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    100.000</del></span>
               </h6>
             </div>
             <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
@@ -325,370 +831,448 @@
             </div>
           </div>
         </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class=" relative [220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/nb.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div></div>
-          <div class="absolute ml-[180px] mb-[350px] "></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/grip.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
           <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">New Belance Classic</h1>
-            <div class="d-flex align-items-center justify-content-between md:text-md text-sm">
+            <h1 class="text-semibold ">Alat Olahraga Otot</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 15.741</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    30.000</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>780 Terjual</p>
             </div>
           </div>
         </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/compas.jpeg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/koskaki.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
           </div>
+
           <div class="card-body pt-6 p-4">
-            <div class="text-semibold text-wrap">Sepatu Compas velocity</div>
-            <div class="d-flex align-items-center justify-content-between text-md">
+            <h1 class="text-semibold ">Kaos Kaki Oldschool</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 5.000</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    10.000</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>1.5k Terjual</p>
             </div>
           </div>
         </div>
-        
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/jordan.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/sampo.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
           </div>
+
           <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Sepatu Jordan</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
+            <h1 class="text-semibold ">Makarizo T1 Techno</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 55.575</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    89.500</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>570 Terjual</p>
             </div>
           </div>
         </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/puma.avif)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/clay.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
           <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Speedcat Og Unisex</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
+            <h1 class="text-semibold ">Emina Clay Mask</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 40.300</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    59.000</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>350 Terjual</p>
             </div>
           </div>
         </div>
-        <div id="card1"
-        class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md shadow-lg cursor-pointer transition-transform duration-300 ease-in-out transform">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/ventela.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/casan.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
           </div>
+
           <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold text-wrap ">Sepatu Ventela Public</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
+            <h1 class="text-semibold ">Charger Vivan</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 150.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    170.000</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>1.2k Terjual</p>
             </div>
           </div>
         </div>
-        
-        <div class="card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/hitam.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/sandal.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
           </div>
-          <div class="card-body pt- p-4">
-            <h1 class="text-semibold ">Sepatu Hitam Putih</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Dejavu Sandal Pria</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
               <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
+                <span class="text-danger text-red-400">Rp 22.325</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    119.900</del></span>
               </h6>
             </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
               <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
               <div class="d-flex mt-2">
               </div>
             </div>
-            <div class="flex gap-2 text-sm text-gray-500">
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
               <i class="bi bi-star text-yellow-400"></i>
               <p>4.8</p>
               <div class="border"></div>
-              <p>950 Terjual</p>
+              <p>5k Terjual</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="scrolldiv" 
-        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth mt-5">
-        <div class="card bg-white w-[220px] h-[330px] ml- mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos1.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
-          </div>
-
-          <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Kaos hitam Bear</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class=" relative [220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos2.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div></div>
-          <div class="absolute ml-[180px] mb-[350px] "></div>
-          <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Kaos Hitam Onepiece</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaosbear.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
-          </div>
-          <div class="card-body pt-6 p-4">
-            <div class="text-semibold text-wrap">Kaos Hitam King Bear</div>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos4.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
-          </div>
-          <div class="card-body pt-6 p-4">
-            <h1 class="text-semibold ">Kaos Hitam Bts</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        <div class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos7.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div></div>
-          <div class="card-body pt-5 p-4">
-            <h1 class="text-semibold text-wrap">Baju Fans Issue Real Madrid</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        <div id="card1"
-        class=" card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md shadow-lg cursor-pointer transition-transform duration-300 ease-in-out transform">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos6.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full absolute"><i class="bi bi-cart3 text-white "></i></div>
-          </div>
-          <div class="card-body pt-5 p-4">
-            <h1 class="text-semibold text-wrap ">Baju Fans Issue Barcelona</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
-          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(/img/kaos3.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-purple-500 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="bi bi-cart3 text-white "></i></div>
-          </div>
-          <div class="card-body pt- p-4">
-            <h1 class="text-semibold ">Kaos Hitam Samurai</h1>
-            <div class="d-flex align-items-center justify-content-between text-md">
-              <h6 class="fw-semibold  mb-0 gap-3">
-                <span class="text-danger text-red-400">Rp 2.000.000</span> <span class="text-sm text-gray-400"><del>Rp
-                    2.500.000</del></span>
-              </h6>
-            </div>
-            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-yellow-600">
-              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
-              <div class="d-flex mt-2">
-              </div>
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500">
-              <i class="bi bi-star text-yellow-400"></i>
-              <p>4.8</p>
-              <div class="border"></div>
-              <p>950 Terjual</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- PRODUK YANG KEDUA -->
-      
-    </section>
-
-
-    <section class="pt-[40px] bg-purple-300">
       <div class="w-full  flex justify-center items-center mt-5">
-        <button class="bg-purple-600 rounded-md w-[500px] h-[30px] text-white">Lihat Lainnya</button>
+        <button class="bg-purple-600 rounded-md    w-[300px] h-[30px] text-white ">Lihat Lainnya</button>
       </div>
-    <div class="flex">
-      <div class="ml-4 w-[500px] h-[230px] bg-[url(/img/banner1.jpg)] bg-cover bg-no-repeat rounded-md mt-8" ></div>
-    <div class=" mt-8 ml-[120px]">
-    <div class="bg-purple-700 w-[300px] h-[100px] bg-[url(/img/banner1.jpg)] bg-cover bg-no-repeat rounded-md"></div>
-    <div class="bg-purple-700 w-[300px] h-[100px] bg-[url(/img/banner1.jpg)] bg-cover bg-no-repeat mt-6 rounded-md"></div>
-    </div>
-    </div>
-    </div>
+      <div
+        class="md:ml-[45px]  rounded-md mt-10 bg-[url('/img/bg-1.jpg')] md:w-[950px] md:h-[180px] w-[330px] mx-4 h-[80px] bg-cover bg-no-repeat ">
+      </div>
+      <div class="flex items-center gap-2 px-4 mt-8">
+        <i class="bi bi-columns-gap text-xl"></i>
+        <h1 class="text-xl font-bold">Produk Lainnya</h1>
+      </div>
+      <div id="scrolldiv"
+        class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth gap-4 md:gap-0  mt-5">
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/blender.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Han River Blander</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 131.560</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    899.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>10k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/tv.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Coocaa 32 inch S3U</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 1.381.840</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    2.999.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>650 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/musik.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kisonli Speaker U-3100</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 149.040</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    369.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>760 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/cpu.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">MSI Infinnite S3 gaming</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 26.965.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    37.999.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>150 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/keyboard.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Basike Keyboard</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 80.750</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    300.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>2k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/kursi.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Kuca Kursi Kantor</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 284.000</span> <span
+                  class="md:text-sm   text-gray-400"><del>Rp
+                    997.500</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>10k Terjual</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white md:w-[220px] md:h-[330px]  w-[180px] h-[300px] ml- mt-2 rounded-md">
+          <div
+            class=" relative md:w-[220px] w-[180px] bg-blue-200 md:h-[190px] h-[170px] rounded-t-md bg-[url(/img/rak.jpg)] bg-cover bg-no-repeat md:pt-[165px] pt-[150px]">
+            <div
+              class=" bg-purple-500 w-[40px] h-[40px]  md:ml-[170px] ml-[135px] flex text-center justify-center items-center rounded-full">
+              <i class="bi bi-cart3 text-white "></i>
+            </div>
+          </div>
+
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Rak Sepatu 4 Susun</h1>
+            <div class="d-flex align-items-center justify-content-between md:text-md text-[13px]">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-red-400">Rp 62.605</span> <span class="md:text-sm   text-gray-400"><del>Rp
+                    450.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 md:text-sm text-[10px] bg-orange-100 md:w-[150px] w-[110px] rounded-md text-yellow-600">
+              <i class="bi bi-ticket-perforated pl-2"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 md:text-sm text-[10px] text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>3k Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full  flex justify-center items-center mt-5">
+        <button class="bg-purple-600 rounded-md   w-[300px] h-[30px] text-white md:w-[500px] ">Lihat Lainnya</button>
+      </div>
+
+
+
+
 
     </section>
-  <!-- UNTUK SIDEBAR -->
-  <script>
-    const sidebar = document.getElementById("sidebar");
+    <!-- UNTUK SIDEBAR -->
+    <script>
+      const sidebar = document.getElementById("sidebar");
 
-    // Aktifkan scroll saat klik di dalam sidebar
-    sidebar.addEventListener("click", () => {
-      sidebar.classList.add("overflow-y-auto");
-      sidebar.classList.remove("overflow-hidden");
-    });
+      // Aktifkan scroll saat klik di dalam sidebar
+      sidebar.addEventListener("click", () => {
+        sidebar.classList.add("overflow-y-auto");
+        sidebar.classList.remove("overflow-hidden");
+      });
 
-    // Hilangkan scroll saat klik di luar sidebar
-    document.addEventListener("click", (event) => {
-      const isClickInside = sidebar.contains(event.target);
-      if (!isClickInside) {
-        sidebar.classList.remove("overflow-y-auto");
-        sidebar.classList.add("overflow-hidden");
-      }
-    });
-  </script>
-  <!-- {{-- Flowbite Cdn JS --}} -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-  <!-- JavaScript: Drag Scroll -->
-  <!-- <script>
+      // Hilangkan scroll saat klik di luar sidebar
+      document.addEventListener("click", (event) => {
+        const isClickInside = sidebar.contains(event.target);
+        if (!isClickInside) {
+          sidebar.classList.remove("overflow-y-auto");
+          sidebar.classList.add("overflow-hidden");
+        }
+      });
+    </script>
+    <!-- {{-- Flowbite Cdn JS --}} -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- JavaScript: Drag Scroll -->
+    <!-- <script>
     const scrollContainer = document.getElementById("scrollContainer");
     let isDown = false;
     let startX;
@@ -719,38 +1303,38 @@
   </script> -->
 
 
-  <!-- JS UNTUK SCROLL -->
- <script>
-  const scrolldiv = document.getElementById('scrolldiv');
+    <!-- JS UNTUK SCROLL -->
+    <script>
+      const scrolldiv = document.getElementById('scrolldiv');
 
-  scrolldiv.addEventListener('wheel', (evt) => {
-    const isScrollingHorizontally = Math.abs(evt.deltaX) > Math.abs(evt.deltaY);
-    
-    if (isScrollingHorizontally || evt.shiftKey) {
-      evt.preventDefault();
-      scrolldiv.scrollBy({
-        left: evt.deltaX * 50, // ⬅️ Tambah kecepatan scroll horizontal
-        behavior: 'smooth'
+      scrolldiv.addEventListener('wheel', (evt) => {
+        const isScrollingHorizontally = Math.abs(evt.deltaX) > Math.abs(evt.deltaY);
+
+        if (isScrollingHorizontally || evt.shiftKey) {
+          evt.preventDefault();
+          scrolldiv.scrollBy({
+            left: evt.deltaX * 50, // ⬅️ Tambah kecepatan scroll horizontal
+            behavior: 'smooth'
+          });
+        }
+      }, { passive: false });
+    </script>
+
+    <!-- JS UNTUK EASE-IN OUT -->
+    <script>
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'scale(0.9)';
+          card.style.transition = 'transform 0.3s ease-in-out';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'scale(1)';
+          card.style.transition = 'transform 0.3s ease-in-out';
+        });
       });
-    }
-  }, { passive: false });
-</script>
-
-<!-- JS UNTUK EASE-IN OUT -->
-<script>
-  const cards = document.querySelectorAll('.card');
-
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = 'scale(0.9)';
-    card.style.transition = 'transform 0.3s ease-in-out';
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'scale(1)';
-    card.style.transition = 'transform 0.3s ease-in-out';
-  });
-});
-</script>
+    </script>
 
 
 </body>
