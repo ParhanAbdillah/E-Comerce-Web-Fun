@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pesanan</title>
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css" />
+        <!--Flowbite Cdn CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    </head>
+    <style>
+        /* File: input.css atau di <style> */
+
+        @layer utilities {
+            .custom-scroll::-webkit-scrollbar {
+                width: 6px;
+                height: 20px;
+            }
+
+            .custom-scroll::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* .custom-scroll::-webkit-scrollbar-thumb {
+  background-color: ;
+  border-radius: 6px;
+} */
+
+            .custom-scroll::-webkit-scrollbar-thumb:hover {
+                background-color: #c766d8;
+            }
+
+            .custom-scroll {
+                scrollbar-width: thin;
+                scrollbar-color: #c766d8 transparent;
+            }
+        }
+    </style>
+    <!-- CSS: Sembunyikan Scrollbar -->
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <body class="relative bg-purple-300">
+
+        <header
+            class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px] shadow z-40">
+            <div class="w-[500px] text-black">
+                <div class="font-semibold">
+                    <h1>Selamat Datang di Hans Store</h1>
+                </div>
+                <p>Hallo, Selamat Berbelanja</p>
+            </div>
+
+            <form action="" class="ml-[-200px]">
+                <div class="relative">
+                    <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"></i>
+                    <input type="text" class="rounded-md py-2 pl-10 pr-3 w-[300px] text-black focus:text-black"
+                        placeholder="Cari Produk" />
+                </div>
+            </form>
+            <div class="flex ml-[200px] text-black cursor-pointer">
+                <div class="border border-black py-2 px-3 rounded-l-md">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="border border-black py-2 px-3">
+                    <a href=""><i class="bi bi-bell-fill"></i></a>
+                </div>
+                <div class="border border-black py-2 px-3 rounded-r-md">
+                    <a href=""><i class="bi bi-gear-fill"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <aside id="sidebar"
+            class="bg-white w-[280px] h-screen left-0 top-0 shadow-xl p-5 fixed hover:overflow-y-auto transition-all duration-300 custom-scroll">
+            <div class="font-bold text-center flex gap-1 fixed border-b-2 w-[230px] border-gray-400 bg-white">
+                <img src="/img/logo.png" class="w-[80px] h-[80px]" />
+                <p class="pt-5 text-[20px]">HANS STORE</p>
+            </div>
+            <div class="border border-gray-400 mt-20 fixed"></div>
+            <div class="mt-24">
+                <div class="mt-3 py-2 mx-3 text-sm">
+                    <p>Menu Dashboard</p>
+                </div>
+                <a href="produk.html">
+                    <div class="mt-1 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                        <i class="bi bi-bag "></i>
+                        <p>Produk</p>
+                    </div>
+                </a>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold  bg-gray-300 hover:bg-gray-500 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-receipt"></i>
+                        <p>Pesanan</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-clock-history"></i>
+                        <p>Riwayat</p>
+                    </a>
+                </div>
+                <a href="keranjang.html">
+                    <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                        <i class="bi bi-cart3"></i>
+                        <p>Keranjang</p>
+
+                    </div>
+                </a>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="fi fi-bs-ticket"></i>
+                        <p>Voucher</p>
+                    </a>
+                </div>
+                <div class="border border-gray-400"></div>
+                <div class="mt-3 py-2 mx-3 text-sm">
+                    <p>Lainnya</p>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-gear-fill"></i>
+                        <p>Pengaturan</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-person-circle"></i>
+                        <p>Akun</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-plus-circle-fill"></i>
+                        <p>logot</p>
+                    </a>
+                </div>
+                <div class="border border-gray-400"></div>
+            </div>
+        </aside>
+
+        <!-- Section 1 -->
+        <section class="bg-purple-300 ml-[300px] h-[100vh] mt-[100px]">
+            <div class="bg-white w-[950px] h-full rounded-xl  ">
+                <div class="flex">
+                    <div class="w-[330px] ml-4 pt-4 "><img src="/img/adidasblu.jpeg" class="rounded-md"></div>
+                    <div class="bg- w-[600px] mt-5 mx-3">
+                        <div class="flex gap-3">
+                            <div class="bg-purple-400 rounded-sm w-11 h-5  text-center mt-1">
+                                <p class="text-sm font-semibold">Star+</p>
+                            </div>
+                            <h1 class="font-semibold text-xl">Adidas Samba OG White Clear Sky Blue Gum</h1>
+                        </div>
+                        <div class="flex gap-2">
+                            <div>
+                                <p>5.0</p>
+                            </div>
+                            <div class="text-xs mt-1">
+                                <i class="bi bi-star-fill text-yellow-300 "></i><i
+                                    class="bi bi-star-fill text-yellow-300 pl-1"></i><i
+                                    class="bi bi-star-fill text-yellow-300 pl-1"></i><i
+                                    class="bi bi-star-fill text-yellow-300 pl-1"></i><i
+                                    class="bi bi-star-fill text-yellow-300 pl-1"></i>
+                            </div>
+                            <div class="border bg-gray-400"></div>
+                            <p class="text-sm mt-1">650 Penilaian</p>
+                            <div class="border text-shadow-gray-400"></div>
+                            <p class="text-sm mt-1">950 Terjual</p>
+                        </div>
+                        <div class="bg-purple-200 mx-3 h-[70px] mt-3 ">
+                            <div class="flex gap-2 pt-4 pl-4">
+                                <h1 class="text-3xl font-bold text-red-300 ">Rp2.000.000</h1><i
+                                    class="bi bi-ticket-perforated pt-2"></i>
+                                <del class="text-gray-400 pt-2">Rp 2.500.000</del>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <h1 class="pl-4 mt-3 text-sm pt-2">Voucher Toko</h1>
+                            <div
+                                class="relative bg-red-200 w-[170px] h-[32px] ml-5 mt-4 border border-gray-400 px-6 text-gray-800 flex items-center justify-center">
+                                <!-- Lingkaran kiri -->
+                                <div
+                                    class="absolute -left-[3px] top-[10px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -left-[3px] top-[19px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -left-[3px] top-[27px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <!-- Lingkaran kanan -->
+                                <div
+                                    class="absolute -right-[3px] top-[10px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -right-[3px] top-[19px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -right-[3px] top-[27px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <!-- Teks -->
+                                <p class="text-sm font-semibold">POTONGAN 15%</p>
+                            </div>
+
+                            <div
+                                class="relative bg-red-200 w-[170px] h-[32px] ml-5 mt-4 border border-gray-400 px-6 text-gray-800 flex items-center justify-center">
+                                <!-- Lingkaran kiri -->
+                                <div
+                                    class="absolute -left-[3px] top-[10px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -left-[3px] top-[19px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -left-[3px] top-[27px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <!-- Lingkaran kanan -->
+                                <div
+                                    class="absolute -right-[3px] top-[10px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -right-[3px] top-[19px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <div
+                                    class="absolute -right-[3px] top-[27px] transform -translate-y-1/2 w-[5px] h-[5px] bg-white rounded-full z-10">
+                                </div>
+                                <!-- Teks -->
+                                <p class="text-sm font-semibold">POTONGAN 30RB</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="flex gap-18">
+                                <h1 class="pl-4 mt-2 text-sm pt-3">Cicilan</h1>
+                                <p class="text-sm pt-[20px]">24x Rp.107.667 (Bunga 0%)</p>
+                            </div>
+                            <button data-modal-target="modal-cicilan" data-modal-toggle="modal-cicilan"
+                                class="text-blue-400 pt-5 text-sm">
+                                Cicilan >
+                            </button>
+                        </div>
+                        <div class="flex gap-3">
+                        <div class="flex gap-10">
+                            <h1 class="pl-4 mt-2 text-sm pt-2">Pengiriman</h1>
+                            <i class="fas fa-truck pt-4 text-teal-600"></i>
+                            </div>
+                            <button data-modal-target="modal-pengiriman" data-modal-toggle="modal-pengiriman"
+                                >
+                                
+                                <p class="text-xs pt-3">Garansi tiba 23 Juni <span class="text-gray-400">></span></p>
+                            </button>
+                            </div>
+
+                            <!-- MOdal cicilan -->
+                            <div id="modal-cicilan" tabindex="-1"
+                                class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
+                                    <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between p-4 border-b rounded-t">
+                                            <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
+                                        </div>
+                                        <!-- Body -->
+                                        <div
+                                            class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
+                                            <!-- Bank List -->
+                                            <div class="flex-1 overflow-y-auto max-h-[400px] rounded p-2">
+                                                <p class="font-semibold mb-2">Kartu Kredit</p>
+                                                <p class="pt-2">Mandiri</p>
+                                                <p class="pt-2">BCA</p>
+                                                <p class="pt-2">BRI</p>
+                                                <p class="pt-2">BNI</p>
+                                                <p class="pt-2">Bank Permata</p>
+                                                <p class="pt-2">Bank Mega</p>
+                                                <p class="pt-2">Bank Danamon</p>
+                                                <p class="pt-2">Bank CIMB Niaga</p>
+                                                <p class="pt-2">Bank BCA Syariah</p>
+                                                <p class="pt-2">BTPN</p>
+                                                <p class="pt-2">Bank Sinarmas</p>
+                                                <p class="pt-2">Bank BRI Syariah</p>
+                                                <p class="pt-2">Bank BNI Syariah</p>
+                                                <p class="pt-2">Bank Muamalat</p>
+                                                <p class="pt-2">Bank Victoria</p>
+                                            </div>
+
+                                            <!-- Cicilan -->
+                                            <div class="w-1/2 md:w-[200px] flex-shrink-0  p-2">
+                                                <p class="font-semibold mb-2">Cicilan</p>
+                                                <p>3x Rp.820.667 (Bunga 0%)</p>
+                                                <p>6x Rp.320.667 (Bunga 0%)</p>
+                                                <p>12x Rp.107.667 (Bunga 0%)</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Footer -->
+                                        <div class="flex items-center p-4 border-t">
+                                            <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
+                                                tidak
+                                                ditampilka akan di terapkan ke pembayaran utama.</p>
+                                            <button data-modal-hide="modal-cicilan"
+                                                class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="modal-pengiriman" tabindex="-1"
+                                class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
+                                    <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between p-4 border-b rounded-t">
+                                            <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
+                                        </div>
+                                        <!-- Body -->
+                                        <div
+                                            class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
+                                            
+
+                                           
+                                        </div>
+
+                                        <!-- Footer -->
+                                        <div class="flex items-center p-4 border-t">
+                                            <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
+                                                tidak
+                                                ditampilka akan di terapkan ke pembayaran utama.</p>
+                                            <button data-modal-hide="modal-pengiriman"
+                                                class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+        </section>
+
+
+
+
+
+
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    </body>
+
+    </html>
