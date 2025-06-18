@@ -69,20 +69,21 @@
         <header
             class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px] shadow z-40">
             <div class="w-[500px] text-black">
-                <div class="font-semibold">
-                    <h1>Selamat Datang di PAP. STORE</h1>
+                <div class="font-semibold flex gap-3">
+                    <a href="produk.html"><i class="bi bi-arrow-left text-4xl cursor-pointer"></i></a>
+                    <h1 class="text-2xl pt-1">Detail Produk</h1>
                 </div>
-                <p>Hallo, Selamat Berbelanja</p>
+               
             </div>
 
-            <form action="" class="ml-[-200px]">
+            <!-- <form action="" class="ml-[-200px]">
                 <div class="relative">
                     <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"></i>
                     <input type="text" class="rounded-md py-2 pl-10 pr-3 w-[300px] text-black focus:text-black"
                         placeholder="Cari Produk" />
                 </div>
-            </form>
-            <div class="flex ml-[200px] text-black cursor-pointer">
+            </form> -->
+            <!-- <div class="flex ml-[200px] text-black cursor-pointer">
                 <div class="border border-black py-2 px-3 rounded-l-md">
                     <i class="bi bi-person-circle"></i>
                 </div>
@@ -92,7 +93,7 @@
                 <div class="border border-black py-2 px-3 rounded-r-md">
                     <a href=""><i class="bi bi-gear-fill"></i></a>
                 </div>
-            </div>
+            </div> -->
         </header>
 
         <aside id="sidebar"
@@ -107,12 +108,12 @@
                     <p>Menu Dashboard</p>
                 </div>
                 <a href="produk.html">
-                    <div class="mt-1 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                    <div class="mt-1 px-5 py-3 mx-3 semi-bold  bg-gray-300 hover:bg-gray-500 rounded-md flex gap-3">
                         <i class="bi bi-bag "></i>
                         <p>Produk</p>
                     </div>
                 </a>
-                <div class="mt-2 px-5 py-3 mx-3 semi-bold  bg-gray-300 hover:bg-gray-500 rounded-md">
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold   hover:bg-gray-500 rounded-md">
                     <a href="" class="flex gap-3"><i class="bi bi-receipt"></i>
                         <p>Pesanan</p>
                     </a>
@@ -158,8 +159,8 @@
         </aside>
 
         <!-- Section 1 -->
-        <section class="bg-purple-300 ml-[300px] h-[100vh] mt-[100px]">
-            <div class="bg-white w-[950px] h-full rounded-xl  ">
+        <section class="bg-purple-300 ml-[300px] h-[1000px] mt-[100px]">
+            <div class="bg-white w-[950px] h-[650px] rounded-xl  ">
                 <div class="flex">
                     <div class="w-[330px] ml-4 pt-4 "><img src="/img/adidasblu.jpeg" class="rounded-md"></div>
                     <div class="bg- w-[600px] mt-5 mx-3">
@@ -257,103 +258,501 @@
                             </button>
                         </div>
                         <div class="flex gap-3">
-                        <div class="flex gap-10">
-                            <h1 class="pl-4 mt-2 text-sm pt-2">Pengiriman</h1>
-                            <i class="fas fa-truck pt-4 text-teal-600"></i>
+                            <div class="flex gap-10">
+                                <h1 class="pl-4 mt-2 text-sm pt-2">Pengiriman</h1>
+                                <i class="fas fa-truck pt-4 text-teal-600"></i>
                             </div>
-                            <button data-modal-target="modal-pengiriman" data-modal-toggle="modal-pengiriman"
-                                >
-                                
+                            <button data-modal-target="modal-pengiriman" data-modal-toggle="modal-pengiriman">
+
                                 <p class="text-xs pt-3">Garansi tiba 23 Juni <span class="text-gray-400">></span></p>
                             </button>
+                        </div>
+                        <div class="flex gap-16">
+                            <h1 class="pl-4 mt-2 text-sm pt-2">Warna</h1>
+
+                            <div class="flex gap-2">
+                                <div class="border w-[150px] flex mt-4 blok">
+                                    <div
+                                        class="border w-[30px] h-[27px] text-center mx-2 my-1 bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                    </div>
+                                    <div class="text-sm pt-2">PUTIH HITAM</div>
+                                </div>
+                                <div class="border w-[150px] flex mt-4 blok">
+                                    <div
+                                        class="border w-[30px] h-[27px] text-center mx-2 my-1 bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                    </div>
+                                    <div class="text-sm pt-2">PUTIH PINK</div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="flex gap-2 ml-[122px]">
+                            <div class="border w-[150px] flex mt-4 blok">
+                                <div
+                                    class="border w-[30px] h-[27px] text-center mx-2 my-1 bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm pt-2">PUTIH HITAM</div>
+                            </div>
+                            <div class="border w-[150px] flex mt-4 blok">
+                                <div
+                                    class="border w-[30px] h-[27px] text-center mx-2 my-1 bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm pt-2">ICE BLUE</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-[59px] mt-4">
+                            <h1 class="pl-4 mt-2 text-sm pt-2">Ukuran</h1>
+                            <div class="flex gap-2 mt-2">
+                                <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">36</div>
+                                </div>
+                                <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">37</div>
+                                </div>
+                                <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">38</div>
+                                </div>
+                                <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">39</div>
+                                </div>
+                                <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">40</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex ml-[124px] gap-2 mt-2">
+                            <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                <div class="text-center pt-1">41</div>
+                            </div>
+                            <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white ">
+                                <div class="text-center pt-1">42</div>
+                            </div>
+                            <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white ">
+                                <div class="text-center pt-1">43</div>
+                            </div>
+                            <div class="border w-[70px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                <div class="text-center pt-1">44</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-12 mt-4">
+                            <h1 class="pl-4 mt-2 text-sm pt-2">Kuantitas</h1>
+                            <div class="flex mt-2">
+                                <div class="border w-[30px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">-</div>
+                                </div>
+                                <div class="border w-[90px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">1</div>
+                                </div>
+                                <div class="border w-[30px] h-[35px] hover:bg-purple-400 hover:text-white">
+                                    <div class="text-center pt-1">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div
+                                class=" rounded-md ml-4 mt-6 w-[200px] h-[45px] border flex text-center py-2 gap-3 px-3 bg-purple-100 border-purple-700 cursor-pointer">
+                                <i class="bi bi-cart3 text-2xl"></i>
+                                <div class=" text-sm pt-1">Masukan Keranjang</div>
+                            </div>
+                            <div class="  mt-6   flex text-center  gap-3  0">
+                                <button
+                                    class=" rounded-md w-[180px] h-[45px] border flex text-center items-center px-3 justify-center bg-purple-500 text-white hover:bg-purple-300">
+                                    <p>Beli Sekarang</p>
+                                </button>
+                            </div>
+                        </div>
 
-                            <!-- MOdal cicilan -->
-                            <div id="modal-cicilan" tabindex="-1"
-                                class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
-                                <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
-                                    <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
-                                        <!-- Header -->
-                                        <div class="flex items-center justify-between p-4 border-b rounded-t">
-                                            <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
-                                        </div>
-                                        <!-- Body -->
-                                        <div
-                                            class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
-                                            <!-- Bank List -->
-                                            <div class="flex-1 overflow-y-auto max-h-[400px] rounded p-2">
-                                                <p class="font-semibold mb-2">Kartu Kredit</p>
-                                                <p class="pt-2">Mandiri</p>
-                                                <p class="pt-2">BCA</p>
-                                                <p class="pt-2">BRI</p>
-                                                <p class="pt-2">BNI</p>
-                                                <p class="pt-2">Bank Permata</p>
-                                                <p class="pt-2">Bank Mega</p>
-                                                <p class="pt-2">Bank Danamon</p>
-                                                <p class="pt-2">Bank CIMB Niaga</p>
-                                                <p class="pt-2">Bank BCA Syariah</p>
-                                                <p class="pt-2">BTPN</p>
-                                                <p class="pt-2">Bank Sinarmas</p>
-                                                <p class="pt-2">Bank BRI Syariah</p>
-                                                <p class="pt-2">Bank BNI Syariah</p>
-                                                <p class="pt-2">Bank Muamalat</p>
-                                                <p class="pt-2">Bank Victoria</p>
-                                            </div>
 
-                                            <!-- Cicilan -->
-                                            <div class="w-1/2 md:w-[200px] flex-shrink-0  p-2">
-                                                <p class="font-semibold mb-2">Cicilan</p>
-                                                <p>3x Rp.820.667 (Bunga 0%)</p>
-                                                <p>6x Rp.320.667 (Bunga 0%)</p>
-                                                <p>12x Rp.107.667 (Bunga 0%)</p>
-                                            </div>
+
+                        <!-- MOdal cicilan -->
+                        <div id="modal-cicilan" tabindex="-1"
+                            class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
+                                <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
+                                    <!-- Header -->
+                                    <div class="flex items-center justify-between p-4 border-b rounded-t">
+                                        <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
+                                    </div>
+                                    <!-- Body -->
+                                    <div
+                                        class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
+                                        <!-- Bank List -->
+                                        <div class="flex-1 overflow-y-auto max-h-[400px] rounded p-2">
+                                            <p class="font-semibold mb-2">Kartu Kredit</p>
+                                            <p class="pt-2">Mandiri</p>
+                                            <p class="pt-2">BCA</p>
+                                            <p class="pt-2">BRI</p>
+                                            <p class="pt-2">BNI</p>
+                                            <p class="pt-2">Bank Permata</p>
+                                            <p class="pt-2">Bank Mega</p>
+                                            <p class="pt-2">Bank Danamon</p>
+                                            <p class="pt-2">Bank CIMB Niaga</p>
+                                            <p class="pt-2">Bank BCA Syariah</p>
+                                            <p class="pt-2">BTPN</p>
+                                            <p class="pt-2">Bank Sinarmas</p>
+                                            <p class="pt-2">Bank BRI Syariah</p>
+                                            <p class="pt-2">Bank BNI Syariah</p>
+                                            <p class="pt-2">Bank Muamalat</p>
+                                            <p class="pt-2">Bank Victoria</p>
                                         </div>
 
-                                        <!-- Footer -->
-                                        <div class="flex items-center p-4 border-t">
-                                            <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
-                                                tidak
-                                                ditampilka akan di terapkan ke pembayaran utama.</p>
-                                            <button data-modal-hide="modal-cicilan"
-                                                class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
+                                        <!-- Cicilan -->
+                                        <div class="w-1/2 md:w-[200px] flex-shrink-0  p-2">
+                                            <p class="font-semibold mb-2">Cicilan</p>
+                                            <p>3x Rp.820.667 (Bunga 0%)</p>
+                                            <p>6x Rp.320.667 (Bunga 0%)</p>
+                                            <p>12x Rp.107.667 (Bunga 0%)</p>
                                         </div>
+                                    </div>
+
+                                    <!-- Footer -->
+                                    <div class="flex items-center p-4 border-t">
+                                        <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
+                                            tidak
+                                            ditampilka akan di terapkan ke pembayaran utama.</p>
+                                        <button data-modal-hide="modal-cicilan"
+                                            class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div id="modal-pengiriman" tabindex="-1"
-                                class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
-                                <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
-                                    <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
-                                        <!-- Header -->
-                                        <div class="flex items-center justify-between p-4 border-b rounded-t">
-                                            <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
-                                        </div>
-                                        <!-- Body -->
-                                        <div
-                                            class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
-                                            
+                        <div id="modal-pengiriman" tabindex="-1"
+                            class="fixed hidden top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative w-[600px] h-[600px] max-w-full max-h-full mx-auto">
+                                <div class="relative bg-white rounded-lg shadow-sm h-full flex flex-col">
+                                    <!-- Header -->
+                                    <div class="flex items-center justify-between p-4 border-b rounded-t">
+                                        <h3 class="text-xl font-medium text-gray-900">Simulasi Cicilan</h3>
+                                    </div>
+                                    <!-- Body -->
+                                    <div
+                                        class="flex flex-col md:flex-row flex-1 p-4 space-y-4 md:space-y-0 md:space-x-4 overflow-hidden">
 
-                                           
-                                        </div>
 
-                                        <!-- Footer -->
-                                        <div class="flex items-center p-4 border-t">
-                                            <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
-                                                tidak
-                                                ditampilka akan di terapkan ke pembayaran utama.</p>
-                                            <button data-modal-hide="modal-pengiriman"
-                                                class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
-                                        </div>
+
+                                    </div>
+
+                                    <!-- Footer -->
+                                    <div class="flex items-center p-4 border-t">
+                                        <p class="text-xs text-gray-500">Sisa pembayaran setelah pembagian yang
+                                            tidak
+                                            ditampilka akan di terapkan ke pembayaran utama.</p>
+                                        <button data-modal-hide="modal-pengiriman"
+                                            class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-200">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-white mt-12 rounded-lg h-[110px] pt-4">
+                    <div class="flex gap-4">
+                        <div class=" h-[80px] w-[80px] border ml-3 rounded-full">
+                            <img src="/img/adidas-logo.png " class="w-[70px] h-[70px] pl-2 pt-4">
+                        </div>
+
+                        <div>
+                            <h1 class="font-bold">Adidas_Store</h1>
+                            <p class="text-xs">Aktif 15 Menit Lalu </p>
+                            <div class="flex gap-2 mt-2">
+                                <button
+                                    class="w-[150px] h-[35px] border text-center flex gap-2 px-3 items-center bg-purple-100 border-purple-600">
+                                    <i class="bi bi-chat-left-dots-fill text-purple-600"></i>
+                                    <p class="text-sm text-purple-600">Chet Sekarang</p>
+                                </button>
+                                <button class="w-[150px] h-[35px] border text-center flex gap-2 px-3 items-center">
+                                    <i class="bi bi-shop-window"></i>
+                                    <p class="text-sm">Kunjungi Toko</p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="border "></div>
+                        <div class="">
+                            <div class="flex gap-5">
+                                <p class="text-gray-500 text-sm">Penilaian</p>
+                                <p class="text-purple-700 text-sm">4,2RB</p>
+                                <p class="text-gray-500 text-sm">Persentase chet di bales </p>
+                                <p class="text-purple-700 text-sm">4,2RB</p>
+                            </div>
+                            <div class="flex gap-5 mt-3">
+                                <p class="text-gray-500 text-sm">Bergabung</p>
+                                <p class="text-purple-700 text-sm">18 bulan lalu</p>
+                                <p class="text-gray-500 text-sm">Produk</p>
+                                <p class="text-purple-700 text-sm">53</p>
+                            </div>
+                            <div class="flex gap-5 mt-3">
+                                <p class="text-gray-500 text-sm">Waktu Chet Di Balas</p>
+                                <p class="text-purple-700 text-sm">hitungan jam</p>
+                                <p class="text-gray-500 text-sm">Pengikut</p>
+                                <p class="text-purple-700 text-sm">50RB</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white mt-3 rounded-lg h-[100vh] pt-4">
+                    <div class="w-[920px] h-[40px] ml-3 mr-6 bg-purple-300 ">
+                        <h1 class="pt-2 pl-2 font-bold">Spesifikasi Produk</h1>
+                    </div>
+                    <div class="flex gap-10">
+                        <div class="">
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Kategori</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Merek</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Produk Costum</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Wide Fit</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Tipe Pengikat</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Tampilan Kulit</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Negara Asal</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Tinggi Hak</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Model Sepatu</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-gray-500">Dikirim </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class=" mt-8 ml-3 gap-2">
+                                <a href="" class="text-sm text-purple-600">P.A.P Store <span
+                                        class="text-gray-400">></span></a>
+                                <a href="" class="text-sm text-purple-600">Sepatu Pria <span
+                                        class="text-gray-400">></span></a>
+                                <a href="" class="text-sm text-purple-600">Sneaker <span
+                                        class="text-gray-400">></span></a>
+                            </div>
+                            <div class=" mt-7    ml-3 ">
+                                <p class="text-sm text-black">-</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">Tidak</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">Ya</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">Tali</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">Matte</p>
+                            </div>
+                            <div class=" mt-9    ml-3 ">
+                                <p class="text-sm text-black">Vietnam</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">Rendah</p>
+                            </div>
+                            <div class=" mt-7    ml-3 ">
+                                <p class="text-sm text-black">SNEAKERS</p>
+                            </div>
+                            <div class=" mt-8    ml-3 ">
+                                <p class="text-sm text-black">BANDUNG</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white mt-5 rounded-lg h-[100vh] pt-4">
+                        <div class="w-[920px] h-[40px] ml-3 mr-6 bg-purple-300 ">
+                            <h1 class="pt-2 pl-2 font-bold">Deskripsi Produk</h1>
+                            <div class="mt-4">
+                                <p class="pt-4">#BUDAYAKAN MEMBACA SEBELUM BERTANYA
+                                <p class="pt-2">#SELAMAT DATANG DI TOKO MAXIMUM_SNEAKERS</p>
+
+                                <p class="pt-3">PENTING!!!</p>
+
+
+                                <p class="pt-2 text-sm"> Jangan melihat ulasan yang memberikan review bintang( 1 dan 2 )
+                                    Lihatlah dan jadikan
+                                    patokan ulasan yang memberikan review bintang tinggi( 4 dan 5 ). Karena bisa saja
+                                    yang memberikan ulasan rendah bintang( 1 dan 2 ) adalah pesaing atau competitor
+                                    kami, yang takut toko dan produknya tersaingi.</p>
+
+                                <p class="pt-2 text-sm">*Jangan tertipu dan tergiur dengan harga murah, karena kualitas
+                                    bisa murahan.</p>
+
+                                <p class="pt-2 text-sm">*Harga menjamin kualitas barang.</p>
+
+                                <p class="pt-2 text-sm">*Pengemasan di jamin rapi.</p>
+
+                                <p class="pt-2 text-sm">*100% barang baru melalui kualitas kontrol yang baik.</p>
+
+                                <p class="pt-2 text-sm">*Kami menjual produk dengan kualitas terbaik dan harga
+                                    terjangkau.</p>
+
+                                <p class="pt-2 text-sm">*Barang boleh sama, tapi kualitas barang bisa kami jamin
+                                    berbeda. Karena tujuan kami
+                                    memberikan kepuasan dan kenyamanan kepada customer.</p>
+
+                                <p class="pt-2 text-sm">*Melayani 24 jam, dengan fast respon dan ramah.</p>
+
+                                <p class="pt-2 text-sm">*Orderan langsung di kirim di hari pemesanan setelah melakukan
+                                    transaksi.</p>
+
+                                <p class="pt-2 text-sm">Terima kasih atas kunjungannya semoga anda jadi langanan kami.
+                                </p>
+
+                                <p class="pt-12">HAPPY SHOPING... </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white  mt-5 rounded-lg h-[1000 px] border pt-4">
+                        <div class="w-[920px] h-[40px] ml-3 mr-6 bg-purple-300 ">
+                            <h1 class="pt-2 pl-2 font-bold">Penilain Produk</h1>
+                        </div>
+                        <div class="w-[920px] h-[120px] mb-8  ml-3 mr-6 mt-3 bg-purple-100 ">
+                            <div class=" relative ">
+                                <div class=" gap-3  pl-5 pt-6   absolute ">
+
+                                    <h1 class="font-semibold text-purple-700 text-2xl pl-2">4.3 <span
+                                            class="text-purple-700 text-sm">dari</span> <span
+                                            class="text-purple-700 text-sm">5</span></h1>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-half text-purple-700"></i>
+
+                                </div>
+                                <div class="flex ml-32 pl-8 gap-2 pt-2 ">
+                                    <div class="border w-[110px] h-[35px]  border-purple-700">
+                                        <div class="text-center pt-1 text-purple-600">Semua</div>
+                                    </div>
+                                    <div class="border w-[110px] h-[35px] text-sm ">
+                                        <div class="text-center pt-1">5 Bintang(8)</div>
+                                    </div>
+                                    <div class="border w-[110px] h-[35px] text-sm   ">
+                                        <div class="text-center pt-1">4 Bintang (1)</div>
+                                    </div>
+                                    <div class="border w-[110px] h-[35px] text-sm  ">
+                                        <div class="text-center pt-1">3 Bintang (0)</div>
+                                    </div>
+                                    <div class="border w-[110px] h-[35px] text-sm  ">
+                                        <div class="text-center pt-1">2 Bintang (0)</div>
+                                    </div>
+                                    <div class="border w-[110px] h-[35px] text-sm  ">
+                                        <div class="text-center pt-1">1 Bintang (0)</div>
+                                    </div>
+                                </div>
+                                <div class="mt-5 ml-40 flex gap-2">
+                                    <div class="border w-[150px] h-[35px] text-sm  ">
+                                        <div class="text-center pt-1">Dengan Komentar (2)</div>
+                                    </div>
+                                    <div class="border w-[150px] h-[35px] text-sm ">
+                                        <div class="text-center pt-1">Dengan Media (1)</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                        <div class="flex ml-3 gap-4">
+                            
+                                <div
+                                    class="w-[60px] h-[60px] rounded-full bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm">
+                                    <h1 class="font-semibold">Adidas_Store</h1>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <p class="text-gray-500 text-xs">2024-12-11 16:53 | Variasi: PUTIH HITAM,40</p>
+                                    <p class="text-gray-500 mt-5 ">Styling : <span class="text-black text-sm">bagus</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kenyamanan : <span class="text-black text-sm">pas</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kualitas: <span class="text-black text-sm">Sesuai </span></p>
+                                    <div class="w-[80px] h-[80px] bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat mt-3"></div>
+                                   
+                                </div>
+                        </div>
+                        <div class="border mt-2"></div>
+                        <div class="flex ml-3 gap-4 mt-3">
+                            
+                                <div
+                                    class="w-[60px] h-[60px] rounded-full bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm">
+                                    <h1 class="font-semibold">Adidas_Store</h1>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <p class="text-gray-500 text-xs">2024-12-11 16:53 | Variasi: PUTIH HITAM,40</p>
+                                    <p class="text-gray-500 mt-5 ">Styling : <span class="text-black text-sm">bagus</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kenyamanan : <span class="text-black text-sm">pas</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kualitas: <span class="text-black text-sm">Sesuai </span></p>
+                                    <div class="w-[80px] h-[80px] bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat mt-3"></div>
+                                   
+                                </div>
+                        </div>
+                        <div class="border mt-2"></div>
+                        <div class="flex ml-3 gap-4 mt-3">
+                            
+                                <div
+                                    class="w-[60px] h-[60px] rounded-full bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm">
+                                    <h1 class="font-semibold">Adidas_Store</h1>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <p class="text-gray-500 text-xs">2024-12-11 16:53 | Variasi: PUTIH HITAM,40</p>
+                                    <p class="text-gray-500 mt-5 ">Styling : <span class="text-black text-sm">bagus</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kenyamanan : <span class="text-black text-sm">pas</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kualitas: <span class="text-black text-sm">Sesuai </span></p>
+                                    <div class="w-[80px] h-[80px] bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat mt-3"></div>
+                                   
+                                </div>
+                        </div>
+                        <div class="border mt-2"></div>
+                        <div class="flex ml-3 gap-4 mt-3">
+                            
+                                <div
+                                    class="w-[60px] h-[60px] rounded-full bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat">
+                                </div>
+                                <div class="text-sm">
+                                    <h1 class="font-semibold">Adidas_Store</h1>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <i class="bi bi-star-fill text-purple-700"></i>
+                                    <p class="text-gray-500 text-xs">2024-12-11 16:53 | Variasi: PUTIH HITAM,40</p>
+                                    <p class="text-gray-500 mt-5 ">Styling : <span class="text-black text-sm">bagus</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kenyamanan : <span class="text-black text-sm">pas</span></p>
+                                    <p class="text-gray-500 mt-5 ">Kualitas: <span class="text-black text-sm">Sesuai </span></p>
+                                    <div class="w-[80px] h-[80px] bg-[url(/img/adidasblu.jpeg)] bg-cover bg-no-repeat mt-3"></div>
+                                   
+                                </div>
+                        </div>
+                        <div class="border mt-2"></div>
+
 
 
         </section>
+
+
 
 
 
