@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pesanan</title>
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css" />
+        <!--Flowbite Cdn CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    </head>
+    <style>
+        /* File: input.css atau di <style> */
+
+        @layer utilities {
+            .custom-scroll::-webkit-scrollbar {
+                width: 6px;
+                height: 20px;
+            }
+
+            .custom-scroll::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* .custom-scroll::-webkit-scrollbar-thumb {
+  background-color: ;
+  border-radius: 6px;
+} */
+
+            .custom-scroll::-webkit-scrollbar-thumb:hover {
+                background-color: #c766d8;
+            }
+
+            .custom-scroll {
+                scrollbar-width: thin;
+                scrollbar-color: #c766d8 transparent;
+            }
+        }
+    </style>
+    <!-- CSS: Sembunyikan Scrollbar -->
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <body class="relative bg-purple-300">
+
+        <header
+            class="flex fixed top-0 left-0 right-0 w-full h-20 bg-purple-300 text-white items-center pl-[30px] ml-[280px] shadow z-40">
+            <div class="w-[900px] text-black">
+                <div class="font-semibold text-2xl flex justify-between ">
+                    <div class="flex gap-3">
+                    <a href="produk.html"><i class="bi bi-arrow-left text-4xl "></i></a>
+                    <h1>Pengaturan Akun</h1>
+                    </div>
+                    <i class="bi bi-chat-text"></i>
+                </div>
+
+            </div>
+
+            <!-- <form action="" class="ml-[-200px]">
+                <div class="relative">
+                    <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-black mt-3"></i>
+                    <input type="text" class="rounded-md py-2 pl-10 pr-3 w-[300px] text-black focus:text-black"
+                        placeholder="Cari Produk" />
+                </div>
+            </form> -->
+            <!-- <div class="flex ml-[200px] text-black cursor-pointer">
+                <div class="border border-black py-2 px-3 rounded-l-md">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="border border-black py-2 px-3">
+                    <a href=""><i class="bi bi-bell-fill"></i></a>
+                </div>
+                <div class="border border-black py-2 px-3 rounded-r-md">
+                    <a href=""><i class="bi bi-gear-fill"></i></a>
+                </div>
+            </div> -->
+        </header>
+
+        <aside id="sidebar"
+            class="bg-white w-[280px] h-screen left-0 top-0 shadow-xl p-5 fixed hover:overflow-y-auto transition-all duration-300 custom-scroll">
+            <div class="font-bold text-center flex gap-1 fixed border-b-2 w-[230px] border-gray-400 bg-white">
+                <img src="/img/logo.png" class="w-[80px] h-[80px]" />
+                <p class="pt-5 text-[20px]">PAP. STORE</p>
+            </div>
+            <div class="border border-gray-400 mt-20 fixed"></div>
+            <div class="mt-24">
+                <div class="mt-3 py-2 mx-3 text-sm">
+                    <p>Menu Dashboard</p>
+                </div>
+                <a href="produk.html">
+                    <div class="mt-1 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                        <i class="bi bi-bag "></i>
+                        <p>Produk</p>
+                    </div>
+                </a>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold   hover:bg-gray-500 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-receipt"></i>
+                        <p>Pesanan</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-clock-history"></i>
+                        <p>Riwayat</p>
+                    </a>
+                </div>
+                <a href="keranjang.html">
+                    <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                        <i class="bi bi-cart3"></i>
+                        <p>Keranjang</p>
+
+                    </div>
+                </a>
+                <a href="vocher.html">
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md flex gap-3">
+                    
+                        <i class="fi fi-bs-ticket"></i>
+                        <p>Voucher</p>
+                    
+                </div>
+                </a>
+                <div class="border border-gray-400"></div>
+                <div class="mt-3 py-2 mx-3 text-sm">
+                    <p>Lainnya</p>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold bg-gray-300 hover:bg-gray-500 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-gear-fill"></i>
+                        <p>Pengaturan</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-person-circle"></i>
+                        <p>Akun</p>
+                    </a>
+                </div>
+                <div class="mt-2 px-5 py-3 mx-3 semi-bold  hover:bg-gray-300 rounded-md">
+                    <a href="" class="flex gap-3"><i class="bi bi-plus-circle-fill"></i>
+                        <p>logot</p>
+                    </a>
+                </div>
+                <div class="border border-gray-400"></div>
+            </div>
+        </aside>
+
+        <!-- Section 1 -->
+        <section class="bg-purple-300 ml-[300px] h-[1000px] mt-[100px]">
+            <div class="bg-white w-[950px] h-[1000px] rounded-xl  ">
+                <div class="bg-gray-200">
+                    <h1 class="px-3 py-3">Akun Saya</h1>
+                </div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Keamanan Akun</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Alamat Saya</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Kartu Rekening Bank</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="bg-gray-200">
+                    <h1 class="px-3 py-3">Pengaturan</h1>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Pengaturan Chat</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Pengaturan Notifikasi</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Pengaturan privasi</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Pengaturan Diblokir</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Bahasa/Language</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="bg-gray-200">
+                    <h1 class="px-3 py-3">Bantuan</h1>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Pusat Bantuan</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Peraturan Komunitas</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Kebijakan P.A.P Store</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Suka P.A.P Store? Nilai Kami!</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Informasi</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="flex justify-between cursor-pointer">
+                    <h1 class="px-3 py-3">Ajukan Penghapusan Akun</h1>
+                    <p class="px-3 py-3">></p>
+                </div>
+                <div class="border"></div>
+                <div class="items-center justify-center flex mt-5">
+                <button class="border w-[500px] h-[50px]"><p>Ganti Akun</p></button>
+                </div>
+                <div class="items-center justify-center flex mt-5">
+                <button class="border w-[500px] h-[50px]  bg-purple-400 hover:bg-purple-800"><p>Logout</p></button>
+                </div>
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    </body>
+
+    </html>

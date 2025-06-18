@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center h-screen w-full bg-[url(/img/bgungu.jpg)] bg-cover bg-no-repeat font-[aileron]"
+    >
+    <div
+          class="w-[330px] h-[350px] bg-[url(/img/loginor1.jpg)] bg-cover bg-no-repeat rounded-l-2xl"
+        ></div>
+      <!-- Border besar -->
+      <div class="flex">
+        <div
+          class="bg-white h-[350px] w-[330px] justify-center items-center rounded-r-2xl"
+        >
+          <div class="justify-center items-center mx-3 pt-3">
+            <div class="items-center justify-center flex font-bold text-2xl">
+              Sign in
+            </div>
+            <!-- Username -->
+            <form action="" class="md:mx-10 mt-10">
+              <!-- <p class="text-white font-semibold">Username</p> -->
+              <input
+                type="text"
+                class="border border-purple-500 w-full py-2 px-3 rounded-md focus:outline-none focus:border-purple-500 bg-transparent"
+                placeholder="Username or Email"
+              />
+            </form>
+            <!-- Email -->
+            <form action="" class="md:mx-10">
+              <!-- <p class="text-white font-semibold">Email</p> -->
+              <input
+                type="text"
+                class="border border-purple-500 w-full py-2 px-3 rounded-md mt-5 focus:outline-none focus:border-purple-500 bg-transparent"
+                placeholder="Password"
+              />
+              <p class="text-xl text-red-400 invisible peer-invalid:visible">Email Not Found BOsku!</p>
+            </form>
+          </div>
+
+          <!-- Chechbox -->
+          <div class="justify- flex items-center mt-[-20px] gap-3">
+            <form action="" class="pl-[55px]">
+              <input
+                type="checkbox"
+                class="border border-blue-500 w-full rounded-md bg-gray-300 mt-1 focus:outline-none focus:border-blue-500"
+              />
+            </form>
+            <p class="text-xs mt-2 -ml-1">Remeber Me</p>
+          </div>
+
+          <!-- Submit -->
+          <form action="" class="md:mx-10 mt-4">
+            <button
+              type="submit"
+              class="border border-purple-500 w-[100px] text-white py-1 ml-3 rounded-md bg-purple-400  hover:bg-purple-500 hover:text-black"
+            >
+              <a href="produk.html">Sign in</a>
+            </button>
+          </form>
+          <p class="pl-14 mt-3 text-xs">
+            Don't have an account ?
+            <a href="register.html" class=" text-purple-500 hover:text-blue-300">Create your account</a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
